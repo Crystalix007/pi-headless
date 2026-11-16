@@ -1,0 +1,30 @@
+{
+  "name": "pi-headless",
+  "version": "0.1.0",
+  "description": "Pi extension that runs non-user-initiated shell commands headless, so editors, pagers and credential prompts fail fast instead of hanging the agent.",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "headless",
+    "non-interactive"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "pi": {
+    "extensions": [
+      "./extensions/headless.ts"
+    ]
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "1.5.2",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}

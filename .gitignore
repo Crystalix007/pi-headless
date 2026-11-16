@@ -1,0 +1,4 @@
+node_modules/
+.pi-lens/
+*.log
+.DS_Store
